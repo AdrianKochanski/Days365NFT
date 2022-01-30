@@ -11,7 +11,7 @@ contract Days365 is ERC721URIStorage, Ownable {
 
     uint256 internal baseFee;
     Counters.Counter private _tokensCounter;
-    uint256 internal maxSupply;
+    uint256 public maxSupply;
 
     constructor() ERC721("365Days", "DAY")
     {
@@ -43,6 +43,9 @@ contract Days365 is ERC721URIStorage, Ownable {
             _tokensCounter.current() < maxSupply,
             "The maximum number of Tokens was reached"
         );
+
+        (bool sent, ) = owner().call{value: msg.value }("");
+        require(sent, "Could not pay contract owner!");
 
          _tokensCounter.increment();
         _safeMint(msg.sender, _tokensCounter.current());
