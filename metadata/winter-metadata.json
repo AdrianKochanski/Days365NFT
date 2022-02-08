@@ -1,0 +1,15 @@
+{
+    "name": "01.01.2022",
+    "description": "See the beauty of the winter",
+    "image": "https://ipfs.io/ipfs/QmUbQDQ4YCqNC8bvrHh5ioaRsGAxmQ22StGdWfNJGtWfuc?filename=winter.png",
+    "attributes": [
+        {
+            "trait_type": "location",
+            "value": "49.570538, 20.167848"
+        },
+        {
+            "trait_type": "temperature",
+            "value": -4
+        }
+    ]
+}

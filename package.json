@@ -5,16 +5,9 @@
   "dependencies": {
     "@chainlink/contracts": "0.1.9",
     "@openzeppelin/contracts": "^4.4.2",
-    "@testing-library/jest-dom": "^5.16.1",
-    "@testing-library/react": "^12.1.2",
-    "@testing-library/user-event": "^13.5.0",
     "@truffle/hdwallet-provider": "^1.4.1",
     "bn.js": "^5.2.0",
-    "dotenv": "^8.2.0",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "5.0.0",
-    "web-vitals": "^2.1.4",
+    "dotenv": "^8.6.0",
     "web3": "^1.7.0"
   },
   "devDependencies": {
@@ -31,10 +24,6 @@
     "truffle-plugin-verify": "^0.5.21"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "testapp": "react-scripts test",
-    "eject": "react-scripts eject",
     "compile": "npx truffle compile",
     "console:dev": "npx truffle console --network cldev",
     "console:live": "npx truffle console --network live",
@@ -62,5 +51,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/AdrianKochanski/Days365NFT.git",
+  "author": "AKochanski <50527866+AdrianKochanski@users.noreply.github.com>",
+  "license": "MIT"
 }
