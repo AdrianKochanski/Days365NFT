@@ -9,6 +9,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract Days365 is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
+    event UriChange(uint nftId, address owner);
     uint256 internal baseFee;
     Counters.Counter private _tokensCounter;
     uint256 public maxSupply;
@@ -31,6 +32,7 @@ contract Days365 is ERC721URIStorage, Ownable {
         // ?? To check if the approver should have access
         require(ownerOf(tokenId) == _msgSender(), "Only owner can sent a new token URI");
         _setTokenURI(tokenId, _tokenURI);
+        emit UriChange(tokenId, msg.sender);
     }
 
     function mintToken(string memory tokenURI) public payable {
