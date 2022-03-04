@@ -1,6 +1,6 @@
 // contracts/Days365.sol
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.0;
+pragma solidity ^0.8.1;
 
 import "@openzeppelin/contracts/utils/Timers.sol";
 import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
