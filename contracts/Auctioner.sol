@@ -9,9 +9,9 @@ import "@openzeppelin/contracts/token/ERC721/IERC721.sol";
 contract Auctioner {
     using Timers for Timers.Timestamp;
 
-    event Start(uint nftId, address owner, uint startAmount);
-    event End(uint nftId, address winner, uint price);
-    event Cancel(uint nftId, address seller);
+    event Start(uint indexed nftId, address owner, uint startAmount);
+    event End(uint indexed nftId, address winner, uint price);
+    event Cancel(uint indexed nftId, address seller);
     event Bid(uint indexed nftId, address indexed sender, uint amount);
     event Withdraw(uint indexed nftId, address indexed bidder, uint amount);
 

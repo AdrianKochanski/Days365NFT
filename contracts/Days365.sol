@@ -9,7 +9,7 @@ import "@openzeppelin/contracts/utils/Counters.sol";
 contract Days365 is ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
-    event UriChange(uint nftId, address owner);
+    event UriChange(uint indexed nftId, address owner);
     uint256 internal baseFee;
     Counters.Counter private _tokensCounter;
     uint256 public maxSupply;
